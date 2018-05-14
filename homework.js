@@ -101,4 +101,34 @@ const verdict = declareMurderer();
 console.log(verdict);
 
 // I think this is going to return Mr Green.
-// No! I was wrong. It was Mrs White. That's because I read the code wrong and thought the plot twist was a separate function - it's actually inside changeMurderer. 
+// No! I was wrong. It was Mrs White. That's because I read the code wrong and thought the plot twist was a separate function - it's actually inside changeMurderer.
+
+
+let murderer = 'Professor Plum';
+
+const changeMurderer = function() {
+  murderer = 'Mr. Green';
+
+  const plotTwist = function() {
+    let murderer = 'Colonel Mustard';
+
+    const unexpectedOutcome = function() {
+      murderer = 'Miss Scarlet';
+    }
+
+    unexpectedOutcome();
+  }
+
+  plotTwist();
+}
+
+const declareMurderer = function() {
+  return `The murderer is ${murderer}.`;
+}
+
+changeMurderer();
+const verdict = declareMurderer();
+console.log(verdict);
+
+// Oh, not sure. There is a global variable here. I think it will return Miss Scarlet.
+// Nope, wrong again. Now it's Mr Green?! Is it because it's a global variable? 
