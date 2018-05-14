@@ -1,3 +1,30 @@
+//My answers:
+// 1. The console should print out Miss Scarlet as the murderer. (correct)
+
+// 2. This should run an error, as you cannot change the murderer - it's been set to a const. (correct)
+
+// 3. This should return the first time with Mrs Peacock and the second time with Professor Plum. (correct)
+
+// 4.  This should return Miss Scarlet, Professor Plum and Colonel Mustard.
+// Then it should return "Suspect three is Mrs Peacock" (correct)
+
+// 5. I think this is going to allow the weapon change. It will say the weapon is a revolver. (correct)
+
+// 6. I think this is going to return Mr Green. (incorrect)
+// No! I was wrong. It was Mrs White. That's because I read the code wrong and thought the plot twist was a separate function - it's actually inside changeMurderer.
+
+// 7. Oh, not sure. There is a global variable here. I think it will return Miss Scarlet.
+// Nope, wrong again. Now it's Mr Green?! Is it because it's a global variable?
+
+// 8. My brain hurts. I think this weapon is now the candle stick?? (correct)
+
+// 9. I feel like I am being tricked here... I think it will be Mrs Peacock...
+// LOL. I was wrong. It's Professor Plum. I think it's because of the block?
+
+
+
+
+
 const scenario = {
   murderer: 'Miss Scarlet',
   room: 'Library',
@@ -184,4 +211,4 @@ const verdict = declareMurderer();
 console.log(verdict);
 
 // I feel like I am being tricked here... I think it will be Mrs Peacock...
-// LOL. I was wrong. It's Professor Plum. It's because of the block. I see now. 
+// LOL. I was wrong. It's Professor Plum. It's because of the block. I see now.
